@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/ll"  
+    android:background="@drawable/selector" android:layout_margin="5dip" 
+    >
+    <!--  
+    <RelativeLayout android:orientation="horizontal" android:gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"    
+    >
+    -->
+    <LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content"    
+    android:weightSum="3"
+    >
+		
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+		android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="1"		
+		>
+		<TextView 
+			android:id="@+id/carname"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="make"
+			android:textColor="@color/list_row_text"
+			android:textSize="@dimen/text_size_fur"			
+			android:textStyle="bold"
+			android:layout_marginLeft="5dip" 
+			android:singleLine="true"
+			android:layout_weight="0"
+		/>	
+		</LinearLayout>	
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+		android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="2"		
+		android:layout_marginLeft="5dip"
+		>
+		<TextView 
+			android:id="@+id/carmodel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="model"
+			android:textColor="@color/list_row_text"
+			android:textSize="@dimen/text_size_fur"	
+			android:textStyle="bold"
+			android:layout_marginLeft="5dip"
+			android:layout_toRightOf="@+id/carname"
+			android:singleLine="true"
+			android:layout_weight="0"
+		/>
+		</LinearLayout>	
+			  
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0"
+		 android:layout_alignParentRight="true"> 
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:text="km" android:id="@+id/dist" android:layout_toLeftOf="@+id/comma1" android:textSize="@dimen/text_size_r11_veh" android:textColor="@color/list_row_text"
+		/>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:text="," android:id="@+id/comma1" android:layout_toLeftOf="@+id/vol" android:textSize="@dimen/text_size_r11_veh" android:textColor="@color/list_row_text"
+		/>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:text="kWh" android:id="@+id/vol" android:layout_toLeftOf="@+id/comma2" android:textSize="@dimen/text_size_r11_veh" android:textColor="@color/list_row_text"
+		/>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:text="," android:id="@+id/comma2" android:layout_toLeftOf="@+id/consum" android:textSize="@dimen/text_size_r11_veh" android:textColor="@color/list_row_text"
+		/>		
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:text="km/l" android:id="@+id/consum" android:layout_alignParentRight="true" android:textSize="@dimen/text_size_r11_veh" android:textColor="@color/list_row_text"
+			android:layout_marginRight="5dip"
+		/>
+		</LinearLayout>
+		
+	</LinearLayout>
+	<!--  </RelativeLayout> -->
+	<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal" android:layout_marginTop="15dip" android:layout_gravity="center"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3">
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+			android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="1.1"		
+			>			
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="40km" android:layout_weight="0"
+			android:paddingLeft="5dip" android:id="@+id/distcovered" android:textColor="@color/list_row_text" android:singleLine="true" 
+			/>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+			android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="1.9"		
+			android:layout_marginLeft="0dip"
+			>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Fill-ups" android:layout_weight="0"
+			android:layout_marginLeft="0dip" android:paddingLeft="10dip" android:id="@+id/fillups" android:textColor="@color/list_row_text" android:singleLine="true"
+			/>		
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:gravity="fill_horizontal"  android:layout_gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0"
+		 	android:layout_alignParentRight="true"> 
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6.8km/l" android:layout_weight="0" 
+			android:id="@+id/consumevalue" android:textColor="@color/text_yellow_color" android:layout_marginRight="5dip" android:singleLine="true"
+			/>		
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+
+

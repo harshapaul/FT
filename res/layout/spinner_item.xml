@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView android:id="@+id/spinnerText" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/button_color" 
+    android:shadowColor="@color/buttontext_shadow_color"
+    android:shadowDx="-1"
+    android:shadowDy="-2"
+    android:shadowRadius="0.2"
+    android:textStyle="bold"
+ 	xmlns:android="http://schemas.android.com/apk/res/android" android:singleLine="true" android:paddingLeft="10dip" android:paddingRight="10dip" android:drawablePadding="5dip"/>

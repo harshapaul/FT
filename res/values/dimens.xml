@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_height">3dip</dimen>
+    <dimen name="text_size_r1_veh">20dip</dimen>
+    <dimen name="text_size_r11_veh">12dip</dimen>
+    <dimen name="text_size_grp">16dip</dimen>
+    <dimen name="text_size_fur">16dip</dimen>
+</resources>

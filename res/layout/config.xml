@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="5dip"  android:background="@drawable/activity_background"
+    >
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+	android:layout_weight="0"
+	>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginTop="30dip" android:layout_marginBottom="25dip" >
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Currency" android:layout_weight="2" android:textColor="@color/text_color"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="4" android:id="@+id/currtype" android:prompt="@string/curr_prompt"
+			/>			
+		</TableRow>		
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginBottom="25dip" >
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Distance Type" android:layout_weight="2" android:textColor="@color/text_color"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="4" android:id="@+id/disttype" android:prompt="@string/dist_prompt"
+			/>			
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginBottom="25dip" >
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Volume Type" android:layout_weight="2" android:textColor="@color/text_color"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="4" android:id="@+id/voltype" android:prompt="@string/fuel_prompt"
+			/>
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginBottom="25dip" >
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Consumption Type" android:layout_weight="2" android:textColor="@color/text_color"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="4" android:id="@+id/consmtype" android:prompt="@string/consum_prompt"
+			/>
+		</TableRow>		
+	</TableLayout>	
+	
+	<LinearLayout 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:gravity="center">	
+		<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:text="Save" android:layout_weight="0" android:id="@+id/saveconfig"
+			android:drawableLeft="@drawable/save_btn" android:paddingLeft="10dip" android:paddingRight="20dip"
+		/>		
+	</LinearLayout>
+</LinearLayout>
+

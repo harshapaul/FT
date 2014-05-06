@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme1" parent="android:style/Theme.NoTitleBar">
+        <item name="android:buttonStyle">@style/Button</item>
+      	<item name="android:spinnerStyle">@style/Spinner</item>
+        <item name="android:imageButtonStyle">@style/Button</item>
+    </style>
+</resources>

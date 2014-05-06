@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"   
+    android:background="@drawable/selector" android:layout_margin="5dip" 
+    android:id="@+id/configlayout"
+    >
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip" 
+	>
+		<TextView	
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="Distance"			
+			android:textSize="17dip"
+			android:textStyle="bold"
+			android:id="@+id/configunit"
+		></TextView>
+		<TextView	
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="Km"
+			android:layout_marginTop="10dip"
+			android:id="@+id/configvalue"
+		></TextView>
+	</LinearLayout>
+	 
+	<RelativeLayout 		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dip"
+	>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/configicon"
+			android:id="@+id/configbutton"
+			android:layout_alignParentRight="true"
+			android:focusable="false" android:focusableInTouchMode="false"
+			android:layout_marginRight="10dip"
+		>
+		</ImageView>
+	</RelativeLayout> 	
+</LinearLayout>

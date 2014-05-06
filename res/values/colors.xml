@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>       
+    <color name="cache_color">#00000000</color>
+    <color name="parent_background">#382210</color>
+    <color name="parent_text">#B19A7B</color>
+    <color name="child_item_text">#FFFFFF</color>
+    <color name="child_text">#422208</color>
+    <color name="child_background">#B19A7B</color>
+    <color name="divider_color">#000000</color>
+    <color name="exp_divider">#C0AF99</color>
+    <color name="text_color">#ffffff</color>
+    <color name="button_color">#422208</color> 
+    <color name="text_yellow_color">#FF9C00</color>
+     <color name="buttontext_shadow_color">#ffffff</color>
+    <!--<color name="list_row">@android:color/darker_gray</color>
+    --><color name="list_row">#382210</color>
+    <color name="list_row_odd">#221912</color>
+    <color name="list_row_text">#B19A7B</color>
+    <color name="list_background">#1B1918</color>  
+    <color name="list_background_selected">#ffffff</color> 
+    <color name="tab_background">#785132</color>
+    <color name="tab_divider">#FAFAF8</color>
+    <color name="buttonpressedstart">#FFBB00</color>
+	<color name="buttonpressedend">#FF8F00</color>
+	<color name="buttonstart">#90692D</color>
+	<color name="buttonmiddle">#4C2C15</color>
+	<color name="buttonend">#BD7224</color>
+	<color name="titlebackgroundcolor">#3232CD</color>
+    <color name="titletextcolor">#FFFF00</color>
+	<color name="graph_background">#9B7A5A</color>
+	<color name="spinner_car">#535252</color>
+	<color name="topstartgradient">#785132</color>
+	<color name="topendgradient">#161616</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/childname"
+         android:paddingLeft="20dip"
+         android:focusable="false"
+         android:textSize="15dip"
+         android:textStyle="normal"
+         android:layout_width="wrap_content"
+         android:text="Child Itemddddddddddddd"
+         android:layout_weight="1"
+         android:textColor="@color/child_text"
+         android:gravity="center|left"
+         android:background="@color/child_background"
+         android:layout_height="25dip"/>
+
+    <TextView android:id="@+id/rgb"
+         android:focusable="false"
+         android:textSize="15dip"
+         android:singleLine="true"
+         android:textStyle="normal"
+         android:gravity="center|left"
+         android:text="Child Valuesss"
+         android:textColor="@color/child_item_text"
+         android:background="@color/child_background"
+         android:layout_width="wrap_content"
+         android:layout_weight="0.1"
+         android:layout_height="25dip"/>
+</LinearLayout>

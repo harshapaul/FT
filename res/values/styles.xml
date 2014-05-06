@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/button_color</item>
+        <item name="android:shadowColor">@color/buttontext_shadow_color</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawablePadding">5dip</item>
+    </style>
+    <style name="Spinner" parent="@android:style/Widget.Spinner">
+		<item name="android:background">@drawable/btn_bg</item>
+    	<item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:drawablePadding">5dip</item>
+    </style>
+</resources>

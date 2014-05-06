@@ -1,0 +1,33 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true">
+		<shape>
+			<gradient android:startColor="@color/buttonpressedstart"
+				android:endColor="@color/buttonpressedend" android:angle="270" />
+			<!--<stroke android:width="3dp" android:color="@color/button_pressed" />
+			--><corners android:radius="6dp" /><!--
+			<padding android:left="5dp" android:top="5dp" android:right="5dp"
+				android:bottom="5dp" />
+		--></shape>
+	</item>
+
+	<item android:state_focused="true">
+		<shape>
+			<gradient android:endColor="@color/buttonpressedend"
+				android:startColor="@color/buttonpressedstart" android:angle="270" />
+			<!--<stroke android:width="3dp" android:color="@color/button_pressed" />
+			--><corners android:radius="6dp" /><!--
+			<padding android:left="5dp" android:top="5dp" android:right="5dp"
+				android:bottom="5dp" />
+		--></shape>
+	</item>
+
+	<item android:drawable="@drawable/button">
+		<!--<shape>
+			<gradient android:endColor="@color/buttonend" android:centerColor="@color/buttonmiddle"
+				android:startColor="@color/buttonstart" android:angle="270" />
+			<corners android:radius="6dp" />
+			<padding android:left="5dp" android:top="5dp" android:right="5dp"
+				android:bottom="5dp" />
+		</shape>
+	--></item>
+</selector>

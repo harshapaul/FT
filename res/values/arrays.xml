@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<array name="fiilupmenu">
+		<item>Edit</item>
+		<item>Delete</item>
+		<item>Delete All</item>
+	</array>
+</resources>

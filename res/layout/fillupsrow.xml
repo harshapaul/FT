@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:layout_margin="5dip" android:padding="5dip" android:id="@+id/ll" android:background="@drawable/selector">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal" android:stretchColumns="1" >
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:orientation="horizontal">
+			<TextView android:id="@+id/date" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:singleLine="true"
+				 android:textSize="@dimen/text_size_fur" android:textStyle="bold" android:textColor="@color/list_row_text"/>
+			<TextView android:id="@+id/days" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:singleLine="true"
+				android:layout_marginLeft="5dip" android:textColor="@color/list_row_text"/>
+		</LinearLayout>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:singleLine="true"
+			 android:id="@+id/fuel" android:textColor="@color/list_row_text"/>
+	</LinearLayout>
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginLeft="2dip">
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:weightSum="1.0">
+			<TextView  android:id="@+id/odometer"
+				 android:layout_weight=".43"
+  android:layout_width="0dip"
+				android:layout_height="fill_parent" android:textColor="@color/list_row_text" android:singleLine="true" />
+			<TextView  android:layout_weight=".23"
+  android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:id="@+id/totalcost" android:textColor="@color/list_row_text" android:singleLine="true"  android:layout_marginLeft="2dip" android:layout_marginRight="2dip"/>
+				<TextView  android:layout_weight=".33"
+  android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:id="@+id/temp" android:textColor="@color/list_row_text" android:singleLine="true" />
+		</TableRow>
+		
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:weightSum="1.0">
+			<TextView  android:id="@+id/meter2"
+				 android:layout_weight=".43" 
+  android:layout_width="0dip"
+				android:layout_height="fill_parent" android:textColor="@color/list_row_text" android:singleLine="true"/>
+			
+			<TextView  android:layout_weight=".23"
+  android:layout_width="0dip"
+					
+					android:layout_height="fill_parent" android:id="@+id/volumeprice" android:textColor="@color/list_row_text" android:singleLine="true" android:layout_marginLeft="2dip" android:layout_marginRight="2dip"/>
+			<TextView  android:layout_weight=".33"
+  android:layout_width="0dip"
+					
+					android:layout_height="fill_parent" android:gravity="right" android:textColor="@color/text_yellow_color" android:id="@+id/mileage" android:singleLine="true"/>
+
+			
+		</TableRow>
+		<TableRow android:layout_width="fill_parent" android:id="@+id/rowdash" android:visibility="gone"
+			android:layout_height="wrap_content">
+			<View android:layout_width="fill_parent" android:layout_height="1dip"
+				android:layout_weight="1"  android:background="@color/tab_background" android:layout_span="3" />	
+			
+		</TableRow>
+		<TableRow android:layout_width="fill_parent" android:id="@+id/rownote"
+			android:layout_height="wrap_content" 	android:orientation="vertical" android:visibility="gone">
+			
+			<TextView android:layout_weight="1" android:id="@+id/note" android:layout_span="3" android:text="note"
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent" android:textColor="@color/list_row_text" android:singleLine="true"/>
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

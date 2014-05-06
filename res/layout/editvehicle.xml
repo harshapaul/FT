@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:fillViewport="true" android:id="@+id/scroll2"
+	android:layout_height="fill_parent" android:background="@drawable/activity_background" android:scrollbars="vertical">
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    >
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:layout_marginTop="10dip" android:layout_marginBottom="10dip">
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip">			
+			<TextView android:layout_width="wrap_content"  android:layout_gravity="center_vertical"  android:layout_height="wrap_content" 
+				android:text="Make*" android:layout_weight="1" android:textColor="@color/text_color"
+			/>
+			<EditText android:layout_width="wrap_content" android:textSize="14dip" android:gravity="center_vertical" android:layout_height="37dip" android:maxWidth="155dip"
+				 android:layout_weight="4" android:id="@+id/make" android:singleLine="true"
+			/>			
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip">
+			<TextView android:layout_width="wrap_content"  android:layout_gravity="center_vertical"  android:layout_height="wrap_content"
+				android:text="Model*" android:layout_weight="1" android:textColor="@color/text_color"
+			/>
+			<EditText android:layout_width="fill_parent" android:textSize="14dip" android:gravity="center_vertical" android:layout_height="37dip" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/model" android:singleLine="true"
+			/>
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip">
+			<TextView android:layout_width="wrap_content"  android:layout_gravity="center_vertical"  android:layout_height="wrap_content"
+				android:text="Note*" android:layout_weight="1" android:textColor="@color/text_color"
+			/>
+			<EditText android:layout_width="fill_parent" android:textSize="14dip" android:gravity="center_vertical" android:layout_height="37dip" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/note" android:singleLine="true"
+			/>
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip">
+			<TextView android:layout_width="wrap_content"  android:layout_gravity="center_vertical"  android:layout_height="wrap_content"
+				android:text="TankCapacity*" android:layout_weight="1" android:textColor="@color/text_color"
+				
+			/>
+			<EditText android:layout_width="fill_parent" android:textSize="14dip" android:gravity="center_vertical" android:layout_height="37dip" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/tank_capacity" android:singleLine="true" android:inputType="number"
+			/>
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginTop="0dip">
+			<TextView android:layout_width="wrap_content"  android:layout_height="wrap_content"
+				android:text="Distance" android:layout_weight="1" android:textColor="@color/text_color"
+				android:layout_gravity="center_vertical"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/dist" android:prompt="@string/dist_prompt"
+			/>			
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginTop="5dip">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Volume" android:layout_weight="1" android:textColor="@color/text_color"
+				android:layout_gravity="center_vertical"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/vol" android:prompt="@string/fuel_prompt"
+			/>
+		</TableRow>
+		<TableRow android:layout_marginLeft="5dip"  android:layout_marginRight="5dip" android:layout_marginTop="5dip">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Consumption" android:layout_weight="1" android:textColor="@color/text_color"
+				android:layout_gravity="center_vertical"
+			/>
+			<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="155dip"
+				android:layout_weight="4" android:id="@+id/consm" android:prompt="@string/consum_prompt"
+			/>
+		</TableRow>	
+		<TableRow android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:text="* Required" android:textColor="@color/text_color"
+					android:layout_marginTop="10dip" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" 
+					android:visibility="gone"/>
+
+
+
+		</TableRow>	
+	</TableLayout>	
+	
+	<!--<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" 
+			android:layout_marginLeft="5dip"  android:layout_marginRight="5dip"> 
+		-->
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"  >
+			<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:text="Save" android:layout_marginRight="5dip" android:id="@+id/savebutton"
+			android:drawableLeft="@drawable/save_btn" android:paddingLeft="10dip" android:paddingRight="20dip"/>
+			<Button android:layout_width="wrap_content"  android:paddingRight="10dip" android:layout_marginLeft="10dip"   android:layout_height="wrap_content" 
+				android:text="Cancel" android:id="@+id/cancelbutton" 
+			android:drawableLeft="@drawable/cancel_btn"/>
+		</LinearLayout>
+	<!--</RelativeLayout>	
+--></LinearLayout>
+</ScrollView> 
