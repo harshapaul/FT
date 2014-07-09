@@ -44,5 +44,5 @@
         <activity android:name=".GraphView" android:configChanges="orientation|keyboardHidden" 
         		  android:label="@string/app_name" />
     </application>
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
 </manifest> 
